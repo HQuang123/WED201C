@@ -12,6 +12,20 @@ nav{
   background-color: lightgrey;
 }
 
+nav li{
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+nav li:hover{
+  color: white;
+  width: auto;
+  background: greenyellow;
+  border-radius: 50%;
+}
+
 nav h1{
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -30,6 +44,7 @@ ul{
 .current{
   text-transform: uppercase;
   background-color: lightgrey;
+  font-size: 25px;
 }
 
 .grid {
@@ -39,10 +54,14 @@ ul{
   row-gap: 10px;
 }
 
-.grid img{
-  width:  100%;
-  position: relative;
+.grid>img{
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: lightgrey;
+  margin: 2px;
 }
+
 
 #main_content{
   width: 80%;
@@ -63,5 +82,30 @@ footer{
   grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
   
+}
+
+.shortcut { 
+  position: absolute;
+  left: -9999px;
+}
+
+.shortcut:focus{
+  left: auto;
+  background-color: white;
+  font-size: 20px ;
+}
+
+.background-picture{
+  background-image: url('images/BaconGallupPark.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 80%;
+}
+
+.background-picture>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
