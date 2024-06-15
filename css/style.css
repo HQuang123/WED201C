@@ -1,111 +1,29 @@
-main{
-  min-height: 100px;
+/*Name this external file gallery.css*/
+body{
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
 }
-
-nav a{
-  text-decoration: underline;
+#image{
+    line-height:650px;
+    width: 575px;
+    height: 650px;
+    border:5px solid black;
+    margin:0 auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom:25px;
+    font-size: 150%;
 }
-
-nav{
-  display: inline-block;
-  width: 80%;
-  background-color: lightgrey;
+.preview{
+    width:10%;
+    margin-left:17%;
+    border: 10px solid black;
 }
-
-nav li{
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 5px;
-  font-size: 25px;
+img{
+    width:95%;
 }
-
-nav li:hover{
-  color: white;
-  width: auto;
-  background: greenyellow;
-  border-radius: 50%;
-}
-
-nav h1{
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: blue;
-  font-size: 40px;
-}
-
-
-ul{
-  list-style-type: none;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
-.current{
-  text-transform: uppercase;
-  background-color: lightgrey;
-  font-size: 25px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: center;
-  row-gap: 10px;
-}
-
-.grid>img{
-  width: 50%;
-  border: 1px solid black;
-  padding: 10px;
-  background-color: lightgrey;
-  margin: 2px;
-}
-
-
-#main_content{
-  width: 80%;
-  font-size: medium;
-  background-color: yellow;
-  font-family: sans-serif;
-  font-style: oblique;
-}
-
-footer{
-  background-color: lightgray;
-  width: 80%;
-}
-
-.flex{
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  justify-content: center;
-  
-}
-
-.shortcut { 
-  position: absolute;
-  left: -9999px;
-}
-
-.shortcut:focus{
-  left: auto;
-  background-color: white;
-  font-size: 20px ;
-}
-
-.background-picture{
-  background-image: url('images/BaconGallupPark.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  width: 80%;
-}
-
-.background-picture>img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
