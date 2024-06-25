@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
+	<title>My favourite samsung device that I own</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src = "js/gallery.js"></script>
 </head>
-<body>
+<body onload="accessImage()">
 	
 	<div id = "image" >
 		Hover over an image below to display here.
 	</div>
 	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<div class="flex" >
+	<img class = "preview" alt = "Samsung Galaxy ZFold 5" src = "Images/galaxyFold5.jfif" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
 	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Samsung Galaxy Tab S9" src = "Images/galaxyTab.jfif" onmouseover = "upDate(this)" onmouseout = "unDo()"onfocus="upDate(this)" onblur="unDo()">
 	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Samsung Galaxy S23" src = "Images/s23.jfif"  onmouseover = "upDate(this)" onmouseout = "unDo()"onfocus="upDate(this)" onblur="unDo()">
+	<img class = "preview" src = "Images/samsungLaptop.jfif" alt = "Samsung Laptop" onmouseover = "upDate(this)" onmouseout = "unDo()"onfocus="upDate(this)" onblur="unDo()">
+	<img class = "preview" src = "Images/watch-6-classic-img.jpg" alt = "Samsung watch 6 classic" onmouseover = "upDate(this)" onmouseout = "unDo()"onfocus="upDate(this)" onblur="unDo()">
+	<img class = "preview" src = "Images/samsungEarbuds.jfif" alt = "Samsung Earbuds" onmouseover = "upDate(this)" onmouseout = "unDo()"onfocus="upDate(this)" onblur="unDo()">
+</div>
 
 </body>
 </html>

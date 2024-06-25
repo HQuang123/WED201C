@@ -6,8 +6,16 @@ function upDate(previewPic){
         console.log();
        }
    
-       function unDo(){
+function unDo(){
        document.getElementById("image").style.backgroundImage="url('')";
        document.getElementById("image").innerHTML="Hover over an image below to display";
        console.log();
        }
+
+function accessImage(){
+        var imageList = document.querySelectorAll(".flex img");
+        for(let i = 0 ; i< imageList.length;i++){
+                imageList[i].setAttribute("tabindex", 0);
+        }
+}
+      
