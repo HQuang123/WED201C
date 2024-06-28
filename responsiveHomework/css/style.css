@@ -11,7 +11,7 @@ h1 {
 
 a {
     color: #000;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-family:Arial, sans-serif;
 }
 
@@ -22,6 +22,7 @@ p {
 
 img{
   width:100%;
+  height: 80%;
 }
 
 
@@ -30,41 +31,35 @@ p{
 }
 
 div img{
-    width:150px;
-    height: 150px;
     display:block;
     margin:auto;
+    object-fit: cover;
+    border-radius: 12px;
+    border-color: blue;
+    border-style: dashed;
 }
 
 div{
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
+  display: block;
+  width: 95px;
   padding: 2px;
 }
 
 @media screen and (min-width: 772px) {
-    div{
+    div {
+        display: inline-block;
         width: 45vw;
+        max-height: 30vh;
     }
-
-    div img{
-        height: 30vh;
-    }
-    
 }
+
 
 @media screen and (min-width: 998px) {
-    div{
+    div {
         width: 30vw;
+        /* max-height: 30%; */
     }
-
-    div img{
-        height: 30vh;
-    }
-    
 }
-
 
 
 
