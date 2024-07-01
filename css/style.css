@@ -24,9 +24,9 @@ li{
 }
 
 img{
-    border: 5px solid blue;
-    border-radius: 35px;
-    width: 100%;
+    height: 200px;
+    border-radius: inherit;
+    width: 99%;
   }
 
 .label{
@@ -34,38 +34,38 @@ img{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+figure {
+    margin: 10px;
+    background-color: black;
+    border: solid black;
+    text-align: center;
+}
 .grid{
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
 }
 
-figcaption{
+figcaption {
+    color: orange;
     text-align: center;
 }
 
 @media screen and (min-width:772px) {
     .grid{
-        display: grid;
-        grid-template-columns: 40% 40%;
+        
+        grid-template-columns: auto auto;
         
     }
 
-    figure img{
-        width: 250px; 
-        height: 150px; 
-        border-radius: 50%; 
-        overflow: hidden;
+    figure{
+        border: solid;
+        border-radius: 100px;
     }
 
 
     .grid > figure:last-child{
-        width: 100%;
-        grid-column: 1 / -1;
-        text-align: center;
-        img{
-            width: 100%;
-        }
+        grid-column: 1/ span 2;
     }
       
 
@@ -73,18 +73,16 @@ figcaption{
 
 @media screen and (min-width: 992px) {
     .grid > figure:nth-child(3n){
-        width: 100%;
-        grid-column: 1 / -1;
-        text-align: center;
-        img{
-            width: 100%;
-        }
+        grid-column: 1/ span 2;
     }
 
-    .grid > figure > img{
+    .grid > figure {
         border-radius: 0px;
     }
 }
+
+
+
 
 @media (prefers-reduced-motion: reduce){
     html{
