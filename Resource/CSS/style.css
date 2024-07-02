@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header_menu li{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.header_picture img{
+    width: 20%;
+}
+
+.header_search button{
+    background-color: orange;
+    color:white;
+}
+
+.banner{
+    display: flex;
+    img{
+        width: 50%;
+    }
+}
+.best_seller{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.best_seller h1{
+    text-align: center;
+    color: red;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.best_seller img, .best_seller_content{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.best_seller_content > p > span{
+    color: orange;
+}
+
+.gift{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.gift > div{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.sale_off{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sale_off h1{
+    text-align: center;
+    width: 100%;
+    color: red;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.product img{
+    width: 250px;
+    height: 250px;
+}
+
+.productname {
+    background-color: orange;
+    color: #fff;
+    display: inline-block;
+}
+  
+  .footer {
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .footer p,
+  .footer h5 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
